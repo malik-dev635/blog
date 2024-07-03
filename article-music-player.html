@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article de Blog</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://prismjs.com/themes/prism-okaidia.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/toolbar/prism-toolbar.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS personnalisé -->
+    <style></style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/LOGO-MDEV.jpg"
+            alt="Logo"
+            width="75"
+            class="img-fluid logo"
+          />
+          Blog
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="article.html">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a href=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="hero-article col-md-12 mb-4">
+        <div class="container text-center">
+          <h2>Besoins d'un site web sur mesure pour votre entreprise</h2>
+          <a href="#" class="btn btn-secondary">Contactez-moi</a>
+        </div>
+      </div>
+    </div>
+    <!-- Section Hero -->
+
+    <!-- Contenu de l'article -->
+    <div class="container my-5">
+      <div class="row">
+        <!-- Article principal -->
+        <div class="col-md-8 mb-4">
+          <div class="card">
+            <div class="card-body px-5 py-5">
+              <h1>Interface de lecture de musique</h1>
+              <p class="card-text">2 572 vues • il y a 4 semaines</p>
+              <img
+                src="images/music-player.png"
+                class="card-img-article"
+                alt="Image du lecteur de musique"
+              />
+              <div class="monarticle">
+                <p class="card-text">
+                  Bienvenue dans notre guide sur la création d'un lecteur de
+                  musique avec HTML, CSS et JavaScript. Cet article vous guidera
+                  à travers les étapes nécessaires pour construire une interface
+                  élégante et fonctionnelle pour écouter vos morceaux préférés
+                  directement depuis votre navigateur.
+                </p>
+                <p class="card-text">
+                  Nous allons utiliser HTML pour la structure de la page, CSS
+                  pour le style, et JavaScript pour les fonctionnalités
+                  interactives. Vous apprendrez à intégrer des contrôles de
+                  lecture, afficher des informations sur la piste en cours, et
+                  ajouter des animations pour une expérience utilisateur
+                  enrichie.
+                </p>
+                <h4 class="card-text">
+                  Commençons par le code HTML qui définira la structure de notre
+                  lecteur de musique.
+                </h4>
+
+                <!-- Code HTML -->
+                <h3 class="card-subtitle mb-2 text-muted">Code HTML</h3>
+                <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+      &lt;meta charset="UTF-8" /&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+      &lt;title&gt;Lecteur de musique&lt;/title&gt;
+      &lt;link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      /&gt;
+      &lt;link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      /&gt;
+      &lt;link rel="stylesheet" href="./style.css" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;body class="body"&gt;
+        &lt;div class="album-cover"&gt;
+          &lt;div class="swiper"&gt;
+            &lt;div class="swiper-wrapper"&gt;
+              &lt;div class="swiper-slide"&gt;
+                &lt;img src="images/unity.jpeg" /&gt;
+              &lt;/div&gt;
+              &lt;div class="swiper-slide"&gt;
+                &lt;img src="images/alam-walker-faded.jpg" /&gt;
+              &lt;/div&gt;
+              &lt;div class="swiper-slide"&gt;
+                &lt;img src="images/darkside.jpg" /&gt;
+              &lt;/div&gt;
+              &lt;div class="swiper-slide"&gt;
+                &lt;img src="images/on-my-way.jpg" /&gt;
+              &lt;/div&gt;
+              &lt;div class="swiper-slide"&gt;
+                &lt;img src="images/spectre.jpg" /&gt;
+              &lt;/div&gt;
+              &lt;div class="swiper-slide"&gt;
+                &lt;img src="images/drump.jpg" /&gt;
+              &lt;/div&gt;
+              &lt;div class="swiper-slide"&gt;
+                &lt;img src="images/write-star.jpg" /&gt;
+              &lt;/div&gt;
+              &lt;div class="swiper-slide"&gt;
+                &lt;img src="images/helo.jpg" /&gt;
+              &lt;/div&gt;
+              &lt;div class="swiper-slide"&gt;
+                &lt;img src="images/physical.jpg" /&gt;
+              &lt;/div&gt;
+              &lt;div class="swiper-slide"&gt;
+                &lt;img src="images/coping.jpg" /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+  
+        &lt;div class="music-player"&gt;
+          &lt;h1&gt;Title&lt;/h1&gt;
+          &lt;p&gt;Song Name&lt;/p&gt;
+  
+          &lt;audio id="song"&gt;
+            &lt;source src="song-list/Luke-Bergs-Gold.mp3" type="audio/mpeg" /&gt;
+          &lt;/audio&gt;
+  
+          &lt;input type="range" value="0" id="progress" /&gt;
+  
+          &lt;div class="controls"&gt;
+            &lt;button class="backward"&gt;
+              &lt;i class="fa-solid fa-backward"&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class="play-pause-btn"&gt;
+              &lt;i class="fa-solid fa-play" id="controlIcon"&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class="forward"&gt;
+              &lt;i class="fa-solid fa-forward"&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button class="toggle-volume"&gt;
+              &lt;i class="fa-solid fa-volume-up"&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div class="volume-container" style="display: none"&gt;
+              &lt;input
+                type="range"
+                id="volume"
+                min="0"
+                max="1"
+                step="0.1"
+                value="1"
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/body&gt;
+      &lt;script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"&gt;&lt;/script&gt;
+      &lt;script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"&gt;&lt;/script&gt;
+      &lt;script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"&gt;&lt;/script&gt;
+      &lt;script src="./script.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+  
+            </code></pre>
+
+                <h4 class="card-text">
+                  Ensuite, nous allons ajouter du CSS pour styliser notre
+                  lecteur de musique.
+                </h4>
+                <h3 class="card-subtitle mb-2 text-muted">Code CSS</h3>
+                <pre><code class="language-css">
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
+  
+  :root {
+    --primary-clr: rgba(228, 228, 229, 1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    animation: slidein 120s forwards infinite alternate;
+  }
+  
+  @keyframes slidein {
+    0%,
+    100% {
+      background-position: 20% 0%;
+      background-size: 3400px;
+    }
+    50% {
+      background-position: 100% 0%;
+      background-size: 2400px;
+    }
+  }
+  
+  .album-cover {
+    width: 90%;
+  }
+  
+  .swiper {
+    width: 100%;
+    padding: 40px 0 100px;
+  }
+  
+  .swiper-slide {
+    position: relative;
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+  }
+  
+  .swiper-slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    -webkit-box-reflect: below -5px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+    transform-origin: center;
+    transform: perspective(800px);
+    transition: 0.3s ease-out;
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  /* Music Player */
+  
+  .music-player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-clr);
+    width: 380px;
+    padding: 10px 30px;
+    border-radius: 20px;
+  }
+  
+  .music-player h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  
+  .music-player p {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.6;
+  }
+  
+  /* Music Player Progress */
+  
+  #progress {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    background: rgba(163, 162, 164, 0.4);
+    border-radius: 4px;
+    margin: 32px 0 24px;
+    cursor: pointer;
+  }
+  
+  #progress::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(163, 162, 164, 0.9);
+    width: 16px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    outline: 4px solid var(--primary-clr);
+    box-shadow: 0 6px 10px rgba(5, 36, 28, 0.3);
+  }
+  
+  /* Music Player Controls */
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    aspect-ratio: 1/1;
+    margin: 20px;
+    background: rgba(163, 162, 164, 0.3);
+    color: var(--primary-clr);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: 0;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 20px rgba(5, 36, 28, 0.3);
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  
+  .controls button:is(:hover, :focus-visible) {
+    transform: scale(0.96);
+  }
+  
+  .controls button:nth-child(2) {
+    transform: scale(1.3);
+  }
+  
+  .controls button:nth-child(2):is(:hover, :focus-visible) {
+    transform: scale(1.25);
+  }
+  .toggle-volume {
+    display: block;
+  }
+            </code></pre>
+
+                <h4 class="card-text">
+                  CSS Pour la gestion de la responsivité
+                </h4>
+                <img
+                  src="images/music-player.png"
+                  class="card-img-top"
+                  alt="Image du lecteur de musique"
+                />
+                <pre><code class="language-css">
+  /* Responsive Styles */
+  
+  @media screen and (max-width: 768px) {
+    .swiper {
+      padding: 20px 0 50px;
+    }
+  
+    .swiper-slide {
+      max-width: 100%;
+    }
+  
+    .music-player {
+      width: 300px;
+      padding: 10px 20px;
+    }
+  
+    .music-player h1 {
+      font-size: 1.2rem;
+    }
+  
+    .music-player p {
+      font-size: 0.875rem;
+    }
+  
+    .controls button {
+      width: 40px;
+      font-size: 0.9rem;
+      margin: 10px;
+    }
+  
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    .controls button:nth-child(2) {
+      transform: scale(1.2);
+    }
+    .toggle-volume {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .toggle-volume {
+      display: none;
+    }
+    .swiper-slide {
+      max-width: 100%;
+    }
+  
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  
+    .music-player {
+      width: 260px;
+      padding: 10px 15px;
+    }
+  
+    .music-player h1 {
+      font-size: 1rem;
+    }
+  
+    .music-player p {
+      font-size: 0.75rem;
+    }
+  
+    .controls button {
+      width: 35px;
+      font-size: 0.8rem;
+      margin: 8px;
+    }
+  
+    .controls button:nth-child(2) {
+      transform: scale(1.1);
+    }
+  }
+  
+                </code></pre>
+
+                <!-- Code CSS -->
+
+                <h4 class="card-text">
+                  Et enfin, nous intégrerons JavaScript pour rendre notre
+                  lecteur de musique interactif.
+                </h4>
+
+                <!-- Code JavaScript -->
+                <h3 class="card-subtitle mb-2 text-muted">Code JavaScript</h3>
+                <pre><code class="language-javascript">
+  const progress = document.getElementById("progress");
+  const song = document.getElementById("song");
+  const controlIcon = document.getElementById("controlIcon");
+  const playPauseButton = document.querySelector(".play-pause-btn");
+  const forwardButton = document.querySelector(".forward");
+  const backwardButton = document.querySelector(".backward");
+  const songName = document.querySelector(".music-player h1");
+  const artistName = document.querySelector(".music-player p");
+  const background = document.querySelector(".body");
+  
+  const songs = [
+    {
+      title: "Unity",
+      name: "Alan Walker",
+      source: "song/Alan x Walkers - Unity.mp3",
+      background: "images/unity.jpeg",
+    },
+    {
+      title: "Faded",
+      name: "Alan Walker",
+      source: "song/Alan Walker-Faded.mp3",
+      background: "images/alam-walker-faded.jpg",
+    },
+    {
+      title: "Darkside",
+      name: "Alan Walker",
+      source: "song/Alan Walker-Darkside.mp3",
+      background: "images/darkside.jpg",
+    },
+    {
+      title: "On My Way",
+      name: "'Alan Walker, Farruko et Sabrina Carpenter",
+      source: "song/Alan Walker-Sabrina Carpenter-Farruko-Way.mp3",
+      background: "images/on-my-way.jpg",
+    },
+    {
+      title: "Spectre",
+      name: "Alan Walker",
+      source: "song/Alan Walker-The Spectre.mp3",
+      background: "images/spectre.jpg",
+    },
+  
+    {
+      title: "Drump",
+      name: "Alan Walker",
+      source: "song/Alan Walker-The Drump.mp3",
+      background: "images/drump.jpg",
+    },
+    {
+      title: "Write The Star",
+      name: "Anne-Marie et James Arthur",
+      source: "song/Anne-Marie & James Arthur-Write The Stars.mp3",
+      background: "images/write-star.jpg",
+    },
+    {
+      title: "Hello",
+      name: "Adele",
+      source: "song/Adele-Hello.mp3",
+      background: "images/helo.jpg",
+    },
+    {
+      title: "Physical",
+      name: "Dua Lipa",
+      source:
+        "https://github.com/ecemgo/mini-samples-great-tricks/raw/main/song-list/Dua-Lipa-Physical.mp3",
+      background:
+        "https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/4c5c1727-8b32-48c1-91de-b0496ccf10f6",
+    },
+    {
+      title: "Coping",
+      name: "Rosie Darling",
+      source: "song/Rosie Darling - Coping .m4a",
+      background: "images/coping.jpg",
+    },
+  ];
+  
+  let currentSongIndex = 3;
+  
+  function updateSongInfo() {
+    songName.textContent = songs[currentSongIndex].title;
+    artistName.textContent = songs[currentSongIndex].name;
+    song.src = songs[currentSongIndex].source;
+    background.style.backgroundImage = songs[currentSongIndex].background
+      ? `url(${songs[currentSongIndex].background})`
+      : "";
+    song.addEventListener("loadeddata", function () {});
+  }
+  
+  song.addEventListener("timeupdate", function () {
+    if (!song.paused) {
+      progress.value = song.currentTime;
+    }
+  });
+  
+  song.addEventListener("loadedmetadata", function () {
+    progress.max = song.duration;
+    progress.value = song.currentTime;
+  });
+  
+  function pauseSong() {
+    song.pause();
+    controlIcon.classList.remove("fa-pause");
+    controlIcon.classList.add("fa-play");
+  }
+  
+  function playSong() {
+    song.play();
+    controlIcon.classList.add("fa-pause");
+    controlIcon.classList.remove("fa-play");
+  }
+  
+  function playPause() {
+    if (song.paused) {
+      playSong();
+    } else {
+      pauseSong();
+    }
+  }
+  
+  playPauseButton.addEventListener("click", playPause);
+  
+  progress.addEventListener("input", function () {
+    song.currentTime = progress.value;
+  });
+  
+  progress.addEventListener("change", function () {
+    playSong();
+  });
+  
+  forwardButton.addEventListener("click", function () {
+    currentSongIndex = (currentSongIndex + 1) % songs.length;
+    updateSongInfo();
+    playPause();
+    swiper.slideTo(currentSongIndex);
+  });
+  
+  backwardButton.addEventListener("click", function () {
+    currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+    updateSongInfo();
+    playPause();
+    swiper.slideTo(currentSongIndex);
+  });
+  
+  document.querySelectorAll(".swiper-slide").forEach((slide, index) => {
+    slide.addEventListener("click", () => {
+      currentSongIndex = index;
+      updateSongInfo();
+      playPause();
+      swiper.slideTo(currentSongIndex);
+    });
+  });
+  
+  updateSongInfo();
+  
+  var swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    centeredSlides: true,
+    initialSlide: 3,
+    slidesPerView: "auto",
+    allowTouchMove: true,
+    spaceBetween: 40,
+    coverflowEffect: {
+      rotate: 25,
+      stretch: 0,
+      depth: 50,
+      modifier: 1,
+      slideShadows: false,
+    },
+    navigation: {
+      nextEl: ".forward",
+      prevEl: ".backward",
+    },
+  });
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const song = document.getElementById("song");
+    const volumeControl = document.getElementById("volume");
+    const volumeContainer = document.querySelector(".volume-container");
+    const toggleVolumeBtn = document.querySelector(".toggle-volume");
+  
+    toggleVolumeBtn.addEventListener("click", function () {
+      if (
+        volumeContainer.style.display === "none" ||
+        volumeContainer.style.display === ""
+      ) {
+        volumeContainer.style.display = "block";
+      } else {
+        volumeContainer.style.display = "none";
+      }
+    });
+  
+    volumeControl.addEventListener("input", function () {
+      song.volume = volumeControl.value;
+    });
+  
+    document.addEventListener("wheel", function (event) {
+      if (volumeContainer.style.display === "block") {
+        if (event.deltaY < 0) {
+          volumeControl.value = Math.min(
+            1,
+            parseFloat(volumeControl.value) + 0.1
+          );
+        } else {
+          volumeControl.value = Math.max(
+            0,
+            parseFloat(volumeControl.value) - 0.1
+          );
+        }
+        song.volume = volumeControl.value;
+      }
+    });
+  });
+  
+            </code></pre>
+
+                <p class="card-text">
+                  Cela vous permettra de créer une petit interface de lecteur de
+                  musique et personnalisable pour votre site web.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="sticky-section">
+            <!-- Section des réseaux sociaux -->
+            <div class="card mb-4">
+              <div
+                class="card-body text-center justify-content-center align-items-center"
+              >
+                <h5 class="card-title">Suivez-nous</h5>
+                <div class="social-icons">
+                  <a href="https://www.tiktok.com" class="social-icon tiktok"
+                    ><i class="fab fa-tiktok"></i
+                  ></a>
+                  <a href="https://wa.me/" class="social-icon whatsapp"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                  <a href="https://github.com" class="social-icon github"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com"
+                    class="social-icon linkedin"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <img
+                src="images/affiche.png"
+                class="card-img-top"
+                alt="Description de votre image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Conception de site vitrine personnalisé
+                </h5>
+                <p class="card-text">
+                  Concevez un site web moderne qui attire et engage vos
+                  visiteurs dès la première vue.
+                </p>
+                <!-- Bouton pour demander un devis -->
+                <a href="lien-vers-page-de-demande-de-devis" class="btn"
+                  >Obtenez votre devis personnalisé</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer
+      class="text-left text-lg-start text-white"
+      style="background-color: #0c0f16"
+    >
+      <div class="container p-4 pb-0">
+        <section>
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <img
+                src="images/favicon.png"
+                class="img-fluid mb-4"
+                alt="Logo de votre entreprise"
+              />
+            </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Articles</h6>
+              <p><a class="text-white" href="#">Html</a></p>
+              <p><a class="text-white" href="#">Css</a></p>
+              <p><a class="text-white" href="#">Javascript</a></p>
+              <p><a class="text-white" href="#">Utilitaire</a></p>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fas fa-envelope mr-3"></i>info@malik-dev.tech</p>
+              <p><i class="fas fa-phone mr-3"></i>+225 07 04 92 10 80</p>
+              <h6 class="text-uppercase mt-4 mb-4 font-weight-bold">
+                Suivez-moi
+              </h6>
+              <a
+                href="https://wa.me/your-number"
+                class="text-white mr-4"
+                data-toggle="tooltip"
+                title="WhatsApp"
+              >
+                <i class="fab fa-whatsapp fa-2x"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/your-profile"
+                class="text-white mr-4"
+                data-toggle="tooltip"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </a>
+              <a
+                href="https://www.github.com/your-profile"
+                class="text-white mr-4"
+                data-toggle="tooltip"
+                title="GitHub"
+              >
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Newsletter</h6>
+              <p>
+                Recevez les dernières mises à jour directement dans votre boîte
+                mail.
+              </p>
+              <form>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Entrez votre adresse email"
+                  />
+                </div>
+                <button type="submit" class="btn btn-">S'abonner</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="https://malik-dev.tech">malik-dev</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- FontAwesome pour les icônes de réseaux sociaux -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS et dépendances JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajouter un nouvel article</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="my-4">Ajouter un nouvel article</h2>
+      <form action="insert_article.php" method="POST">
+        <div class="form-group">
+          <label for="title">Titre de l'article :</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            name="title"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="content">Contenu de l'article :</label>
+          <textarea
+            class="form-control"
+            id="content"
+            name="content"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="image_url">URL de l'image (optionnel) :</label>
+          <input
+            type="text"
+            class="form-control"
+            id="image_url"
+            name="image_url"
+          />
+        </div>
+        <div class="form-group">
+          <label for="category">Catégorie :</label>
+          <select class="form-control" id="category" name="category" required>
+            <option value="">Choisir une catégorie</option>
+            <option value="1">Développement Web</option>
+            <option value="2">JavaScript</option>
+            <option value="3">PHP</option>
+            <option value="4">Python</option>
+            <!-- Ajoutez d'autres options selon vos besoins -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="created_at">Date de création :</label>
+          <input
+            type="date"
+            class="form-control"
+            id="created_at"
+            name="created_at"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter l'article</button>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

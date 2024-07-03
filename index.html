@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section de Blog</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/LOGO-MDEV.jpg"
+            alt="Logo"
+            width="75"
+            class="img-fluid logo"
+          />
+          Blog
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="article.html">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">A Propos</a>
+            </li>
+            <li class="nav-item">
+              <a href=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero my-5 mx-5">
+      <div class="container">
+        <h1>Bienvenue sur Mon Blog de Dev Web</h1>
+        <p>
+          Plongez dans l'univers du développement web avec des articles
+          techniques, des astuces pratiques, et des outils incontournables pour
+          booster votre productivité.
+        </p>
+        <a href="#" class="btn">Découvrir plus</a>
+      </div>
+    </div>
+    <!-- Votre contenu de page ici -->
+
+    <div class="container my-5">
+      <h2 class="mb-4">Derniers Poste</h2>
+      <div class="row">
+        <!-- Première ligne -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 position-relative">
+            <div class="badge badge-jaune">javascript</div>
+            <a href="article-music-player.html">
+              <img
+                src="images/music-player.png"
+                class="card-img-top size"
+                alt="10 outils innovants"
+              />
+            </a>
+            <div class="card-body">
+              <a class="text-dark" href="article-music-player.html">
+                <h5 class="card-title">Interface de lecture de musique</h5>
+              </a>
+              <p class="card-text">2 572 vues • il y a 4 semaines</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="badge badge-jaune">Javascript</div>
+            <a href="article.html">
+              <img
+                src="images/pc.jpg"
+                class="card-img-top"
+                alt="SEO fuite de données"
+              />
+            </a>
+            <div class="card-body">
+              <a class="text-dark" href="article.html">
+                <h5 class="card-title">
+                  SEO : que faut-il retenir de la fuite de données Google ?
+                </h5>
+              </a>
+              <p class="card-text">2 303 vues • il y a 2 jours</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="badge badge-bleu">CSS</div>
+            <a href="article.html">
+              <img
+                src="images/pc.jpg"
+                class="card-img-top"
+                alt="Sites Web dynamiques"
+              />
+            </a>
+            <div class="card-body">
+              <a class="text-dark" href="article.html">
+                <h5 class="card-title">
+                  Comment créer des sites Web dynamiques avec le...
+                </h5>
+              </a>
+              <p class="card-text">1 987 vues • il y a 1 mois</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Deuxième ligne -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="badge badge-vert">Utilitaire</div>
+            <a href="article.html">
+              <img
+                src="images/pc.jpg"
+                class="card-img-top"
+                alt="Alternatives à Canva"
+              />
+            </a>
+            <div class="card-body">
+              <a class="text-dark" href="article.html">
+                <h5 class="card-title">5 alternatives à Canva gratuites</h5>
+              </a>
+              <p class="card-text">1 882 vues • il y a 3 semaines</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 mb-4">
+          <div class="card card-horizontal h-100">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <div class="badge badge-vert">Utilitaire</div>
+                <a href="article.html">
+                  <img
+                    src="images/pc.jpg"
+                    class="card-img"
+                    alt="Image de migration MySQL"
+                  />
+                </a>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <a class="text-dark" href="article.html">
+                    <h5 class="card-title">
+                      Migration de MySQL 5.7 vers MySQL 8.0 : tout savoir
+                    </h5>
+                  </a>
+                  <p class="card-text">
+                    Depuis octobre 2023, MySQL 5.7 n'est plus supporté. Si vous
+                    avez un site internet ou que vous gérez des bases de
+                    données, passer à MySQL 8.0 devient essentiel pour maintenir
+                    leur sécurité et leurs performances.
+                  </p>
+                  <p class="card-text">1 792 vues • il y a 2 semaines</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="text-left text-lg-start text-white"
+      style="background-color: #0c0f16"
+    >
+      <div class="container p-4 pb-0">
+        <section>
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <img
+                src="images/favicon.png"
+                class="img-fluid mb-4"
+                alt="Logo de votre entreprise"
+              />
+            </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Articles</h6>
+              <p><a class="text-white" href="#">Html</a></p>
+              <p><a class="text-white" href="#">Css</a></p>
+              <p><a class="text-white" href="#">Javascript</a></p>
+              <p><a class="text-white" href="#">Utilitaire</a></p>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fas fa-envelope mr-3"></i>info@malik-dev.tech</p>
+              <p><i class="fas fa-phone mr-3"></i>+225 07 04 92 10 80</p>
+              <h6 class="text-uppercase mt-4 mb-4 font-weight-bold">
+                Suivez-moi
+              </h6>
+              <a
+                href="https://wa.me/your-number"
+                class="text-white mr-4"
+                data-toggle="tooltip"
+                title="WhatsApp"
+              >
+                <i class="fab fa-whatsapp fa-2x"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/your-profile"
+                class="text-white mr-4"
+                data-toggle="tooltip"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </a>
+              <a
+                href="https://www.github.com/your-profile"
+                class="text-white mr-4"
+                data-toggle="tooltip"
+                title="GitHub"
+              >
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Newsletter</h6>
+              <p>
+                Recevez les dernières mises à jour directement dans votre boîte
+                mail.
+              </p>
+              <form>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Entrez votre adresse email"
+                  />
+                </div>
+                <button type="submit" class="btn">S'abonner</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="https://malik-dev.tech">malik-dev</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- Footer -->
+
+    <!-- End of .container -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
